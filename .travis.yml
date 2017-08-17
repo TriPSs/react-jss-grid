@@ -1,0 +1,32 @@
+sudo: false
+language: node_js
+node_js:
+  - "6"
+  - "8"
+
+branches:
+  only:
+  - master
+
+install:
+  - npm install
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm run test
+  - npm run build
+
+after_success:
+  - npm run codecov
+
+deploy:
+  provider: npm
+  email: t.bokdam@seronaris.nl
+  api_key:
+    secure: IenaD86RvKbIatPx9V82WBZAUJ8IZxVKn5CdXvrQz6ITQ9jxIbgeeEoH46r9J/F/haBTDsrbd3Ebv1M/6b1+O/Hn98szBghxdnrNkEoytre17mdKwTCyE5DCZ+NVjII8ZDrzQWy2aJbzKmTV4ZSHBoXk5MVMGFlJhTGtOfqqFGeqVN8FwKphrTZwIm9l/HXLnFHEXqOdUnEC8QjJlfE5S+U3UTmLyFo5UglHaG3T1XuOpHm2IXwfTGIzoVk70hIpx749gaxlwBTicVVwEspGUDaf/pwBBpPgL1Kk7vgLOw7FXJ9BMIiExCk1MB0CrWwj1z3cVOotMgJ93lvA+h9nZei0JKokY6p4qFTvYFz/aMBzoqkH5OvipwXXTPxP6PCklzUKWQvZGuVoWAdnJpwSK5S9o5VsueTAp6iJYfZl5dEa8T121pJgIx0t/Y0dyhbZhYs90VfyTI02/xiok4Cxs9JmXG/WvmRQe4RAVkblJ2HX2HqONW8Nfrv+4malMI2YZlOK210VKWfLZXJ6ltWJSUn8Bb646uf++1yd78xHjrkNINFl5X0SM7qKJp+7q2U8eVtGCH5SxPQIkC94vhdGO6mUlMrEFE8B3iHgPVUlPD3YAnQy9T8AW56j03bd2NRRgk/yNWlsNuAJehGyQ2gAv04RJryACwlkRFszx0YHpEI=
+  on:
+    tags: true
+    repo: TriPSs/react-jss-grid

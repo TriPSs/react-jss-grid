@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) <Grid /> prop: container should apply the container class 1`] = `
+<div
+  className="typeContainer-0-83 spacing-xs-16-0-98"
+/>
+`;
+
+exports[`(Component) <Grid /> prop: item should apply the item class 1`] = `
+<div
+  className="typeItem-0-167"
+/>
+`;
+
+exports[`(Component) <Grid /> should render 1`] = `
+<div
+  className="woofGrid"
+/>
+`;
