@@ -5,6 +5,7 @@
 !types/**/*
 !types
 !.babelrc
+!.codecov.yml
 !.editorconfig
 !.eslintrc
 !.flowconfig
