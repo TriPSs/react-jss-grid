@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/react-jss-grid" title="downloads"><img src="https://img.shields.io/npm/v/react-jss-grid.svg?maxAge=2592000&style=flat-square"/></a>
-  <a href="https://npm-stat.com/charts.html?package=redux-clazz" title="downloads"><img src="https://img.shields.io/npm/dt/react-jss-grid.svg?maxAge=2592000&style=flat-square"/></a>
+  <a href="https://npm-stat.com/charts.html?package=react-jss-grid" title="downloads"><img src="https://img.shields.io/npm/dt/react-jss-grid.svg?maxAge=2592000&style=flat-square"/></a>
   <a href="https://david-dm.org/tripss/react-jss-grid" title="dependencies status"><img src="https://david-dm.org/tripss/react-jss-grid/status.svg?style=flat-square"/></a>
   <a href="https://david-dm.org/tripss/react-jss-grid?type=dev" title="devDependencies status"><img src="https://david-dm.org/tripss/react-jss-grid/dev-status.svg?style=flat-square"/></a>
 </p>
