@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.npmjs.com/package/TriPSs/react-jss-grid">
+  <a href="https://www.npmjs.com/package/react-jss-grid">
     <img alt="cssinjs" src="https://avatars3.githubusercontent.com/u/9503099?v=4&s=200" width="200">
   </a>
 </p>
