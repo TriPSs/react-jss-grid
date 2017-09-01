@@ -74,54 +74,69 @@ export default (theme: Object) => {
   const breakpoints = hasOwnProperty(theme, 'breakpoints') ? theme.breakpoints : generateBreakpoints()
 
   return {
-    typeContainer                : {
+    typeContainer: {
       boxSizing: 'border-box',
       display  : 'flex',
       flexWrap : 'wrap',
       width    : '100%',
     },
-    typeItem                     : {
+
+    typeItem: {
       boxSizing: 'border-box',
       flex     : '0 0 auto',
       margin   : '0', // For instance, it's useful when used with a `figure` element.
     },
-    'direction-xs-column'        : {
+
+    'direction-xs-column': {
       flexDirection: 'column',
     },
+
     'direction-xs-column-reverse': {
       flexDirection: 'column-reverse',
     },
-    'direction-xs-row-reverse'   : {
+
+    'direction-xs-row-reverse': {
       flexDirection: 'row-reverse',
     },
-    'wrap-xs-nowrap'             : {
+
+    'wrap-xs-nowrap': {
       flexWrap: 'nowrap',
     },
-    'align-xs-center'            : {
+
+    'align-xs-center': {
       alignItems: 'center',
     },
-    'align-xs-flex-start'        : {
+
+    'align-xs-flex-start': {
       alignItems: 'flex-start',
     },
-    'align-xs-flex-end'          : {
+
+    'align-xs-flex-end': {
       alignItems: 'flex-end',
     },
-    'align-xs-baseline'          : {
+
+    'align-xs-baseline': {
       alignItems: 'baseline',
     },
-    'justify-xs-center'          : {
+
+    'justify-xs-center': {
       justifyContent: 'center',
     },
-    'justify-xs-flex-end'        : {
+
+    'justify-xs-flex-end': {
       justifyContent: 'flex-end',
     },
-    'justify-xs-space-between'   : {
+
+    'justify-xs-space-between': {
       justifyContent: 'space-between',
     },
-    'justify-xs-space-around'    : {
+
+    'justify-xs-space-around': {
       justifyContent: 'space-around',
     },
+
     ...generateGutter(theme, 'xs'),
+
     ...breakpoints.keys.reduce((accumulator, key) => {
       // Use side effect over immutability for better performance.
       generateGrid(accumulator, { ...theme, breakpoints }, key)

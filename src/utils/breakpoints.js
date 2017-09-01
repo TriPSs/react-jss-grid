@@ -25,6 +25,7 @@ export default (breakpoints = defaultBreakpoints, unit = 'px', step = 1) => {
     } else {
       value = breakpoints[key] || key
     }
+
     return `@media (min-width:${value}${unit})`
   }
 
@@ -36,6 +37,7 @@ export default (breakpoints = defaultBreakpoints, unit = 'px', step = 1) => {
   const between = (start, end) => {
     const startIndex = keys.indexOf(start)
     const endIndex   = keys.indexOf(end)
+
     return (
       `@media (min-width:${values[startIndex]}${unit}) and ` +
       `(max-width:${values[endIndex + 1] - step / 100}${unit})`
@@ -47,6 +49,7 @@ export default (breakpoints = defaultBreakpoints, unit = 'px', step = 1) => {
     if (keyIndex === keys.length - 1) {
       return up(key)
     }
+
     return between(key, key)
   }
 

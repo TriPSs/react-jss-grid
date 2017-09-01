@@ -13,15 +13,15 @@
  */
 
 import React from 'react'
-import type { Element } from 'react'
 import classNames from 'classnames'
-import withStyles from 'react-jss'
+import withStyles  from 'react-jss'
 
 import type { AllProps } from './GridTypes'
 import GridStyleSheet from './GridStyleSheet'
 
 export const Grid = (props: AllProps) => {
-  const { classes,
+  const {
+          classes,
           className: classNameProp,
           component,
           container,
@@ -82,6 +82,5 @@ Grid.defaultProps = {
   spacing  : 16,
   wrap     : 'wrap',
 }
-
 
 export default withStyles(GridStyleSheet, { name: 'JssGrid' })(Grid)
