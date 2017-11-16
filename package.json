@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "has-own-property": "^1.0.0",
+    "has-own-property": "^1.0.0"
   },
   "peerDependencies": {
     "react": "^16.x",
