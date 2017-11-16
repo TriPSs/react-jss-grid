@@ -30,7 +30,6 @@
     "test": "jest .spec.js",
     "test:update": "npm test -- -u",
     "test:watch": "npm test -- --watch",
-    "preversion": "npm run test",
     "version": "npm run prepublish",
     "postversion": "git push && git push --tags && npm publish"
   },
