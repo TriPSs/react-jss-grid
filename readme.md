@@ -36,6 +36,27 @@ $ npm run build
 $ npm run build:watch // To recompile files on file change
 ```
 
+## Examples
+##### Custom breakpoints
+
+When creating your theme you can define custom breakpoints the following way:
+```js
+import generateBreakPoints from 'react-jss-grid/utils/breakpoints'
+
+const theme = {
+  breakpoints: generateBreakPoints({
+    values: {
+      xs: 360,
+      sm: 600,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
+    },
+  }),
+  ...
+}
+```
+
 ### Using development version in local project
 You can use `npm link` to use your development version in your own project:
 - Go to `react-jss-grid` directory and execute command `npm link`
