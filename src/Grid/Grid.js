@@ -7,6 +7,7 @@ import GridStyleSheet, { GUTTERS } from './GridStyleSheet'
 
 function Grid(props) {
   const {
+    innerRef,
     alignContent,
     alignItems,
     classes,
@@ -58,7 +59,7 @@ function Grid(props) {
 
   const gridProps = { className, ...other }
 
-  return <Component {...gridProps} />
+  return <Component ref={innerRef} {...gridProps} />
 }
 
 Grid.propTypes = {
@@ -179,6 +180,8 @@ Grid.propTypes = {
    * Refer to the limitations section of the documentation to better understand the use case.
    */
   zeroMinWidth: PropTypes.bool,
+
+  innerRef: PropTypes.func,
 }
 
 Grid.defaultProps = {
@@ -193,6 +196,7 @@ Grid.defaultProps = {
   zeroMinWidth: false,
   spacing     : 16,
   wrap        : 'wrap',
+  innerRef    : null,
 }
 
 export default withStyles(GridStyleSheet, { name: 'JssGrid' })(Grid)
