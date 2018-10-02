@@ -64,7 +64,7 @@ You can use `npm link` to use your development version in your own project:
 
 ## [License](https://github.com/tripss/react-jss-grid/blob/master/LICENSE)
 
-React Jss Grid is [MIT licensed](./LICENSE).
+React JSS Grid is [MIT licensed](./LICENSE).
 
 ## Collaboration
 
